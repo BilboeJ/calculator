@@ -1,0 +1,39 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    background-color: rgba(146, 50, 50, 1);
+}
+
+.wrapper{
+    background-color: orangered;
+    height: 50%;
+    padding: 20px;
+    
+    
+}
+
+.screen{
+    background-color: white;
+    text-align: right;
+    margin: 20px;
+    overflow: auto;
+    border: 1px solid
+    
+
+}
