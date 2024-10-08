@@ -28,8 +28,12 @@ function calculate(num1, num2, operator){
     switch(operator){
         case "+":
             return num1 + num2;
-        case "-":
+        case "−":
             return num1 - num2;
+        case "×":
+            return num1 * num2;
+        case "÷":
+            return num1 / num2;
         default:
             return num2;
     }
@@ -59,8 +63,12 @@ document.querySelectorAll('.calc-button').forEach(button => {
             handle_input(value);
         } else if (value === "+") {
             handle_operator("+");
-        } else if (value === "-") {
-            handle_operator("-");
+        } else if (value === "−") {
+            handle_operator("−");
+        } else if (value === "×") {
+            handle_operator("×");
+        } else if (value === "÷") {
+            handle_operator("÷");
         } else if (value === "=") {
             handle_equals();
         } else if (value === "AC") {
